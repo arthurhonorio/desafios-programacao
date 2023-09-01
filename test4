@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main () {
+  
+    int T, tamanho;
+    scanf("%d", &T);
+    scanf("%d", &tamanho);        
+    int vet [tamanho], a, resposta = 0;
+    scanf("%d", &vet); 
+        
+
+    for (a = 0; vet[a] > vet[a + 1]; a++) {
+        resposta = resposta + 1;
+    
+    }
+    
+    if (vet[a] < vet[a+1]) {
+        ++a;
+    }
+
+
+    return 0;
+}
